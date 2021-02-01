@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Main-Container Styling */
+.wrapper {
+    background-color: #001413; /* Primary Color */
+    width: 100%;
+    height: auto;
+}
+/* Main-Container Styling Ends */
+
+/* Nav-Bar */
+.navProperty {
+    padding-left: 40px; 
+    background-color: #001413;
+}
+
+.navbar-light .navbar-brand {
+    color: white !important;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.navList {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url(../images/icons8-menu-24.png);
+}
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active {
+    color: #74aa50 !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color:white !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #74aa50 !important;
+}
+/* Nav-Bar End */
+
+/* Landing Page Begin */
+.landing_page div{
+    color: white;
+}
+
+.landing_page {
+    margin: 0;
+    width: 100%;
+    height: 90vh;
+    margin-bottom: 20vh;
+    background: linear-gradient(to bottom, rgba(0, 20, 19, 0), rgba(0, 20, 19, 1)),url(../images/tickets/edited_bg4.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    padding-top: 110px;
+}
+
+.landing_page_text {
+    padding: 50px 20px 0px 50px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing_page_image {
+    display: flex;
+    justify-content: center;
+}
+.landing_page_image img {
+    object-fit: contain;
+}
+/* Landing Page End */
+
+
+/* Search-Bar  */
+.search_container {
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    display: flex;
+    background: black;
+    margin-bottom: 100px;
+}
+
+.search_container form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.search_container form div {
+    display: flex;
+    background-color: white;
+    width: 65%;
+    border-radius: 50px;
+}
+
+.search_container form div input {
+    width: 90%;
+    height: 44px;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 30px;
+    line-height: 50px;
+}
+
+.search_container form div button {
+    padding: 10px;
+    border-radius: 40px;
+    width: 110px;
+    border: none;
+    outline: none;
+    background-color: #cd7300;
+}
+
+
+/* Event Styling */
+.event-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 60px;
+}    
+
+.event-text h3 {
+    font-size: 30px;
+}
+
+.event-text span {
+    font-size: 22px;
+    color: #e79d00;
+}
+
+.card {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.card-img-top {
+    width: 100%;
+    object-fit: cover;
+}
+
+.location, .date {
+    display: block;
+    padding-bottom: 20px;
+}
+
+.location i, .date i {
+    margin-right: 5px;
+}
+
+.card-body a {
+    width: auto;
+    background-color: #c58b10 !important;
+    border: #c58b10 !important;
+    color: white;
+    transition:transform .07s ;
+}
+
+.card-body a:hover{
+    background-color: #b5800f;
+    transform: scale(1.07);
+}
+
+.kolo {
+    bottom: 0px;
+    transition:bottom 0.3s ;
+}
+
+.kolo:hover {
+    bottom: 15px;
+}
+/* End of Event Styling */
+
+/* Popular Places */
+.container{
+    margin-top: 30vh;
+}
+/* .container .row div {
+    padding-bottom: 30px;
+} */
+
+.wrap {
+    background-color: white;
+}
+
+.container .row .popular_places_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #001413;
+    font-size: 30px;
+    margin: 60px 0;
+}
+
+.container .row .popular_places_text span {
+    font-size: 22px;
+    color: #e79d00;
+}
+
+.container .row .popular_places {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.container .row .popular_places a img{
+    object-fit: cover;
+    height: 350px;
+    width: 100%;
+    transition: all .5s;
+    object-position: center;
+}
+
+.container .row .popular_places a img:hover {
+    background-size: 110%;
+    transform: scale(1.05);   
+}
+
+.city a div {
+    position: absolute;
+    top: 50%;
+    color: white;
+    text-align: center;
+    width: 95%;
+    transform: translate(0,-50.5%);
+}
+
+
+/* Footer Styling */
+footer {
+    color: white;
+    margin-top: 20vh;
+    border-top: 1px solid #c58b10;
+    padding-top: 30px;
+}
+
+footer .row {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+
+}
+
+footer .row div {
+    margin-bottom: 20px;
+}
+
+.row div ul li {
+    list-style: none;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.row div ul .heading {
+    color: #c58b10;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.row div ul li a {
+    color: white;
+}
+
+.row div ul li a:hover {
+    color: #c58b10;
+    text-decoration: none;
+}
+
+.email a:hover, .phone_num a:hover {
+    color: white !important;
+}
+
+.email a i, .phone_num a i{
+    margin-right: 20px;
+}
+.logo h3 {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.logo p {
+    font-size: 10px;
+}
+
+.email_list ul li {
+    margin-bottom: 20px;
+}
+
+.email_input_container {
+    height: 6vh;
+    background-color: white;
+    position: relative;
+    border-radius: 20px;
+    width: 90%;
+    
+}
+
+.email_input_container input {
+    outline: none;
+    border: none;
+    width: 100%;
+    height: inherit;
+    border-radius: 7px;
+    padding-left: 40px;
+    padding-bottom: 12px;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.email_icon{
+    color: #060505;
+    z-index: 999;
+    font-size: 14px;
+    position: absolute;
+    left: 10px;
+    top: 6px;
+}
+
+
+.email_list ul li button {
+    width: 50%;
+    background-color: #c58b10;
+    border: #c58b10;
+    color: white;
+    height: 5vh;
+    border-radius: 7px;
+    font-size: 15px;
+    outline: none;
+}
+
+.email_list ul li button:hover {
+    background-color: #af5807
+}
+
+.email_list .arrow_up {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    color: #c58b10;
+}
+
+.email_list .arrow_up a {
+    color: #c58b10;
+}
+
+.copyright_section {
+    /* border-top: 1px solid yellow; */
+    height: 10vh;
+}
+
+.media_links, .copyright {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.media_links div a i {
+    margin-right: 20px;
+    font-size: 20px;
+    color: #c58b10;
+}
+
+.media_links div a i:hover {
+    color: white;
+}
+
+.copyright {
+    justify-content: flex-end;
+    font-size: 13px;
+}
